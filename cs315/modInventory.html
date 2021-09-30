@@ -1,0 +1,53 @@
+<html>
+  <head> </head>
+  <body>
+      <table>
+          <tr>
+              <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()" autocomplete="off">
+                    <div>
+                    <label>Name</label>
+                    <input type="text" id="name" value=""/>
+                </div>
+                <div>
+                    <label>Category</label>
+                    <input type="text" id="category" value=""/>
+                </div>
+                <div>
+                    <label>Quantity</label>
+                    <input type="text" id="quantity" value=""/>
+                </div>
+                <div>
+                    <label>Ratings</label>
+                    <input type="text" id="ratings" value=""/>
+                </div><br>
+                <div>
+                    <button onclick="filter();">Filter</button><br><br>
+                    <button onclick="sort('ratings');">Sort</button><br><br>
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+                </form>
+              </td>
+              <td>
+                <table class="list" id="itemList">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Ratings</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+              </td>
+          </tr>
+      </table>
+    <script src="inventory.js"></script>
+  </body>
+</html>
