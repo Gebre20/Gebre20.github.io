@@ -69,6 +69,7 @@ function onDelete(td) {
 function filter(addList) {
   addList().filter((a) => a.quantity > 100);
 }
+
 function sort(column) {
   const dataType = typeof addList[0](column);
   sortDirection = !sortDirection;
