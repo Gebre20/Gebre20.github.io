@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p>First Value</p>
+    <P> 
+        <input type="text" id= "firstValue" value="">
+    </P>
+    <p>Second Value</p>
+    <P> 
+        <input type="text" id= "secondValue" value="">
+    </P>
+    <p> Operations:</p>
+    <input type="button" value="+" onclick="addition()"/>
+    <input type="button" value="-" onclick="subtraction()"/>
+    <input type="button" value="*" onclick="multiplication()"/>
+    <p>Result</p>
+
+        <script>
+            function addition(){
+                let firstValue = document.getElementById("firstValue");
+                let secondValue = document.getElementById("secondValue");
+                let sum = Number(firstValue.value) + Number(secondValue.value);
+                alert(sum);
+                let p = document.createElement("p");
+                p.innerHTML = sum;
+                document.body.append(p);
+            }
+            function subtraction(){
+                let firstValue = document.getElementById("firstValue");
+                let secondValue = document.getElementById("secondValue");
+                let substract = Number(firstValue.value) - Number(secondValue.value);
+                alert(substract);
+                let s = document.createElement("s");
+                s.innerHTML = substract;
+                document.body.append(s);
+            }
+            function multiplication(){
+                let firstValue = document.getElementById("firstValue");
+                let secondValue = document.getElementById("secondValue");
+                let product = Number(firstValue.value) * Number(secondValue.value);
+                alert(product);
+                let s = document.createElement("s");
+                s.innerHTML = product;
+                document.body.append(s);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p>Input</p>
+        <P>
+            <input type="text" id="insert" value="text">
+        </P>
+        <p>Output</p>
+        <p>
+            <textarea class="myClass" id ="output" rows="4" cols="20"></textarea>
+        </p>
+        
+        <br><br>
+        <input class="myClass" id="id" type="button" onclick="submit()" value="addValue"/>
+        
+
+        <script>
+            function submit(){
+                //let sum ="";
+                
+                let inputText = document.getElementById("insert");
+                let output = document.getElementById("output");
+                output.value += inputText.value;
+               
+                p.innerHTML = output;
+                document.body.append(output);
+                
+            }
+            
+
+</script>
+            
+        </script>
+    </body>
+</html>
