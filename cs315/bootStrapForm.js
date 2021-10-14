@@ -2,7 +2,7 @@ const myCon = document.getElementById("myCon");
 myCon.addEventListener("register", (event)=>{
   event.preventDefault();
   const request=new XMLHttpRequest();
-  request.open("post", "login.php");
+  request.open("post", "bootStrapForm.html");
 });
 
 function register() {
